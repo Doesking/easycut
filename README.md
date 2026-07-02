@@ -46,7 +46,7 @@
 
 ```bash
 # 1. 克隆仓库
-git clone https://github.com/YOUR_USERNAME/easycut.git
+git clone https://github.com/Doesking/easycut.git
 cd easycut
 
 # 2. 创建虚拟环境
@@ -229,8 +229,8 @@ lut:
 
 ## 📧 联系方式
 
-- GitHub: [@YOUR_USERNAME](https://github.com/YOUR_USERNAME)
-- Issues: [提交问题](https://github.com/YOUR_USERNAME/easycut/issues)
+- GitHub: [@Doesking](https://github.com/Doesking)
+- Issues: [提交问题](https://github.com/Doesking/easycut/issues)
 
 ---
 
