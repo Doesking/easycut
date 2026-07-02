@@ -1,0 +1,28 @@
+# SOE Auto Editor 全局配置
+output:
+  resolution: [1920, 1080]
+  fps: 30
+  codec: "libx264"
+  bitrate: "8M"
+  format: "mp4"
+
+scene_detection:
+  threshold: 27.0
+  min_scene_length: 2.0
+  max_scene_length: 30.0
+
+classification:
+  confidence_threshold: 0.6
+
+music:
+  library_path: "assets/music"
+
+overlays:
+  title_font: "Noto Sans CJK SC"
+  lower_third:
+    height: 120
+    background: "rgba(180, 30, 30, 0.85)"
+  logo:
+    position: "top_right"
+    size: [120, 120]
+    opacity: 0.9

@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+*.egg-info/
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project specific
+uploads/
+output/
+assets/music/
+uploads/covers/
+uploads/logos/
+uploads/luts/
+*.mp4
+*.mov
+*.MOV
+*.wav
+*.mp3
+*.log
+
+# Keep test videos
+!test_videos/*.mp4
+!test_*.mp4
+
+# LUT files (keep the generator script)
+assets/luts/*.cube
+!assets/luts/.gitkeep
+
+# WorkBuddy
+.workbuddy/
+
+# Backup files
+*.backup

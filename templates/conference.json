@@ -1,0 +1,13 @@
+{
+  "name": "会议纪要",
+  "color_tone": "professional",
+  "text_style": "formal",
+  "structure": [
+    {"phase": "venue_shot", "duration": [3, 5], "content": ["outdoor", "indoor"]},
+    {"phase": "opening", "duration": [5, 8], "content": ["meeting"]},
+    {"phase": "speeches", "duration_ratio": 0.6, "content": ["speech"]},
+    {"phase": "interactions", "duration": [10, 20], "content": ["meeting", "handshake"]},
+    {"phase": "closing", "duration": [5, 8], "content": ["group_photo"]}
+  ],
+  "music_preference": {"mood": ["professional","steady","uplifting"], "bpm_range": [70, 100], "energy": ["steady","wave"]}
+}

@@ -1,0 +1,13 @@
+{
+  "name": "参观接待",
+  "color_tone": "bright",
+  "text_style": "semi_formal",
+  "structure": [
+    {"phase": "arrival", "duration": [5, 8], "content": ["outdoor", "handshake"]},
+    {"phase": "tour", "duration_ratio": 0.5, "content": ["visit", "indoor"]},
+    {"phase": "highlights", "duration": [10, 20], "content": ["visit", "document_sign"]},
+    {"phase": "group", "duration": [5, 8], "content": ["group_photo"]},
+    {"phase": "closing", "duration": [3, 5], "content": ["outdoor"]}
+  ],
+  "music_preference": {"mood": ["hopeful","bright","grand"], "bpm_range": [75, 110], "energy": ["build_up","wave"]}
+}

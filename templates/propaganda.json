@@ -1,0 +1,31 @@
+{
+  "name": "宣传视频",
+  "color_tone": "professional",
+  "text_style": "formal",
+  "description": "树新风 · 廉政 · 正确政绩观 — 党委团委宣传教育",
+  "structure": [
+    {"phase": "opening", "duration": [5, 10], "content": ["outdoor", "indoor"]},
+    {"phase": "intro_title", "duration": [4, 6]},
+    {"phase": "problem_statement", "duration": [10, 20], "content": ["speech", "meeting"]},
+    {"phase": "case_study", "duration": [15, 25], "content": ["visit", "meeting", "study"]},
+    {"phase": "discussion", "duration": [10, 20], "content": ["meeting", "speech"]},
+    {"phase": "climax", "duration": [10, 15], "content": ["group_photo", "flag_ceremony"]},
+    {"phase": "closing", "duration": [5, 8], "content": ["outdoor"]}
+  ],
+  "music_preference": {
+    "mood": ["inspiring", "solemn", "uplifting", "determined"],
+    "bpm_range": [70, 100],
+    "energy": ["build_up", "steady", "wave"]
+  },
+  "editing_style": {
+    "transitions": ["fade", "dissolve", "cut"],
+    "pacing": "moderate",
+    "emphasis": "content_driven"
+  },
+  "recommended_keywords": [
+    "树新风", "廉政", "政绩观", "廉洁", "作风", "纪律",
+    "党建", "团建", "主题教育", "思想建设", "党性教育",
+    "警示教育", "典型案例", "先进事迹", "模范"
+  ],
+  "reference_style": "共青团中央宣传教育风格：严肃庄重，案例与理论结合，强调思想引领与行为规范"
+}

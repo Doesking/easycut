@@ -1,0 +1,308 @@
+{
+  "photographers": [
+    {
+      "id": "cartier_bresson_geometry",
+      "category": "photographer",
+      "title": "Henri Cartier-Bresson：几何街头",
+      "subtitle": "决定性瞬间 / 几何构图",
+      "summary": "强调线条、人物位置和街头瞬间，适合有行人、楼梯、窗框、影子和空间关系的照片。",
+      "tags": ["街头", "几何", "黑白", "纪实"],
+      "suitable_for": ["街拍", "人物经过画面", "强线条建筑"],
+      "risk": "如果画面没有人物或几何关系，会显得只是普通黑白。",
+      "actions": ["生成这个方案", "查看参数", "写反馈"],
+      "prompt": {
+        "positive": "Geometric street documentary edit, decisive-moment composition, natural available light, balanced black-and-white tones, subtle grain, preserve candid realism.",
+        "negative": "staged scene, fake people, heavy vignette, surreal contrast, changed architecture",
+        "preserve": "保留原始人物、街景、几何线条和构图。"
+      }
+    },
+    {
+      "id": "daido_moriyama_grain_bw",
+      "category": "photographer",
+      "title": "Daido Moriyama：粗粝黑白",
+      "subtitle": "高反差 / 颗粒 / 街头能量",
+      "summary": "把街头照片推向粗粝、高反差和强颗粒，适合夜街、反射、运动和不完美构图。",
+      "tags": ["黑白", "高反差", "颗粒", "街头"],
+      "suitable_for": ["夜街", "巷子", "运动模糊", "反射"],
+      "risk": "对风景和干净人像会过重，细节可能被压暗。",
+      "actions": ["生成这个方案", "查看参数", "写反馈"],
+      "prompt": {
+        "positive": "High-contrast grainy black-and-white street edit, raw urban energy, deep blacks, bright highlights, rough documentary texture, preserve original scene.",
+        "negative": "smooth beauty retouch, clean commercial look, color pop, fake objects",
+        "preserve": "保留原始街景结构和主体，不新增人物。"
+      }
+    },
+    {
+      "id": "fan_ho_light_shadow",
+      "category": "photographer",
+      "title": "Fan Ho：光影几何",
+      "subtitle": "城市诗意 / 剪影 / 负空间",
+      "summary": "强调强光、阴影、建筑线条和孤独感，适合有明显光影层次的城市或建筑照片。",
+      "tags": ["光影", "建筑", "剪影", "诗意"],
+      "suitable_for": ["建筑光影", "巷道", "剪影人物", "城市空间"],
+      "risk": "如果原图光线很平，会缺少成立条件。",
+      "actions": ["生成这个方案", "查看参数", "写反馈"],
+      "prompt": {
+        "positive": "Poetic urban light-and-shadow edit, strong geometric composition, elegant black-and-white tones, small human figure, atmospheric depth, realistic texture.",
+        "negative": "flat lighting, fake sun rays, overprocessed HDR, invented silhouettes",
+        "preserve": "保留原始建筑、人物位置和透视。"
+      }
+    },
+    {
+      "id": "saul_leiter_layered_color",
+      "category": "photographer",
+      "title": "Saul Leiter：层次色彩街头",
+      "subtitle": "雨窗 / 反射 / 色块",
+      "summary": "适合玻璃、雨天、反射和遮挡，用柔和对比和红黄蓝色块制造安静层次。",
+      "tags": ["反射", "雨窗", "柔和", "色块"],
+      "suitable_for": ["雨街", "玻璃反射", "街头局部", "远处人物"],
+      "risk": "普通晴天大风景不太适合，可能缺少层次。",
+      "actions": ["生成这个方案", "查看参数", "写反馈"],
+      "prompt": {
+        "positive": "Layered atmospheric color street edit, soft reflections, muted painterly color, gentle contrast, quiet urban mood, preserve candid realism.",
+        "negative": "neon cyberpunk, hard HDR, fake rain, oversharpened details",
+        "preserve": "保留真实反射、遮挡、人物和街景关系。"
+      }
+    },
+    {
+      "id": "william_eggleston_everyday_color",
+      "category": "photographer",
+      "title": "William Eggleston：日常强色彩",
+      "subtitle": "普通物件 / 民主视角",
+      "summary": "把日常场景里的颜色和细节认真对待，适合路牌、车辆、街角、室内物件和生活记录。",
+      "tags": ["彩色", "日常", "街角", "纪实"],
+      "suitable_for": ["普通街景", "生活记录", "路牌车辆", "日常物件"],
+      "risk": "不适合想要梦幻或大片感的照片。",
+      "actions": ["生成这个方案", "查看参数", "写反馈"],
+      "prompt": {
+        "positive": "Everyday color documentary edit, vivid but believable local color, direct composition, ordinary details treated with visual importance, realistic texture.",
+        "negative": "cinematic grade, glamour retouch, surreal saturation, removed ordinary details",
+        "preserve": "保留日常物件和真实环境细节。"
+      }
+    },
+    {
+      "id": "stephen_shore_documentary_catalog",
+      "category": "photographer",
+      "title": "Stephen Shore：冷静彩色纪实",
+      "subtitle": "真实 / 平衡 / 城市观察",
+      "summary": "适合城市、建筑、道路和旅行记录，调色克制，强调真实空间关系和准确透视。",
+      "tags": ["彩色纪实", "城市", "建筑", "克制"],
+      "suitable_for": ["城市建筑", "道路旅行", "黄昏街景", "旅行记录"],
+      "risk": "不会特别炸眼，优势是自然和耐看。",
+      "actions": ["生成这个方案", "查看参数", "写反馈"],
+      "prompt": {
+        "positive": "Calm color documentary edit, accurate perspective, natural daylight, quiet geometry, restrained saturation, realistic travel observation.",
+        "negative": "dramatic cinematic grade, heavy vignette, fantasy color, aggressive grain",
+        "preserve": "保留原始场景、建筑关系和透视。"
+      }
+    },
+    {
+      "id": "joel_meyerowitz_warm_street",
+      "category": "photographer",
+      "title": "Joel Meyerowitz：暖色街头",
+      "subtitle": "自然光 / 人与环境",
+      "summary": "适合暖光街头、海边、城市公共空间，保留环境中的人物关系和明亮空气感。",
+      "tags": ["街头", "暖光", "环境", "彩色"],
+      "suitable_for": ["街头人物", "海边城市", "暖色日光", "公共空间"],
+      "risk": "如果原图过暗或没有人物环境关系，效果会弱。",
+      "actions": ["生成这个方案", "查看参数", "写反馈"],
+      "prompt": {
+        "positive": "Warm color street documentary edit, luminous natural light, readable shadows, human figures in environmental context, realistic color.",
+        "negative": "overly dark grade, fake sunset, isolated portrait crop, oversaturation",
+        "preserve": "保留环境范围和人物位置。"
+      }
+    },
+    {
+      "id": "ernst_haas_color_motion",
+      "category": "photographer",
+      "title": "Ernst Haas：色彩运动",
+      "subtitle": "运动 / 抽象 / 光影碎片",
+      "summary": "适合有运动模糊、反射、灯光和色彩碎片的照片，把模糊变成设计感。",
+      "tags": ["运动", "抽象", "色彩", "反射"],
+      "suitable_for": ["运动模糊", "夜景灯光", "反射", "实验街拍"],
+      "risk": "不适合需要清晰主体的纪念照。",
+      "actions": ["生成这个方案", "查看参数", "写反馈"],
+      "prompt": {
+        "positive": "Expressive color motion edit, painterly photographic blur, vivid light shapes, abstract urban energy, preserve original scene structure.",
+        "negative": "fully sharp commercial look, fake light trails, new subjects",
+        "preserve": "保留原始运动方向和场景结构。"
+      }
+    },
+    {
+      "id": "gordon_parks_humanist",
+      "category": "photographer",
+      "title": "Gordon Parks：人文纪实肖像",
+      "subtitle": "人物尊严 / 环境叙事",
+      "summary": "适合环境人像和纪实人物，强调表情、环境背景和自然尊严感。",
+      "tags": ["人像", "纪实", "环境", "人文"],
+      "suitable_for": ["环境人像", "街头人物", "社会场景", "家庭纪实"],
+      "risk": "不适合过度美颜或时尚大片诉求。",
+      "actions": ["生成这个方案", "查看参数", "写反馈"],
+      "prompt": {
+        "positive": "Humanist documentary portrait edit, expressive face, meaningful environment, natural light, dignified tonal structure, realistic texture.",
+        "negative": "beauty filter, theatrical glamour, plastic skin, removed background context",
+        "preserve": "保留人物身份、表情和环境背景。"
+      }
+    },
+    {
+      "id": "vivian_maier_candid",
+      "category": "photographer",
+      "title": "Vivian Maier：街头肖像",
+      "subtitle": "自然光 / 凝视 / 方构图",
+      "summary": "适合街头人物、倒影和日常手势，画面直接、安静、带观察感。",
+      "tags": ["街头人像", "倒影", "黑白", "日常"],
+      "suitable_for": ["街头人物", "橱窗倒影", "方构图", "日常手势"],
+      "risk": "如果没有人物或明确动作，会缺少核心。",
+      "actions": ["生成这个方案", "查看参数", "写反馈"],
+      "prompt": {
+        "positive": "Candid street portrait edit, natural available light, quiet observational mood, clean subject gesture, subtle black-and-white or restrained color.",
+        "negative": "posed fashion retouch, fake expressions, heavy skin smoothing",
+        "preserve": "保留人物身份、姿态和街头环境。"
+      }
+    },
+    {
+      "id": "slim_aarons_leisure",
+      "category": "photographer",
+      "title": "Slim Aarons：阳光度假色彩",
+      "subtitle": "泳池 / 旅行 / 明亮生活方式",
+      "summary": "适合泳池、度假、阳光旅行和社交场景，画面明亮、轻松、整洁。",
+      "tags": ["度假", "阳光", "旅行", "生活方式"],
+      "suitable_for": ["泳池", "度假村", "海边", "阳光社交"],
+      "risk": "不适合阴暗街头或粗粝纪实。",
+      "actions": ["生成这个方案", "查看参数", "写反馈"],
+      "prompt": {
+        "positive": "Sunlit leisure color edit, clean bright palette, relaxed social atmosphere, polished travel-lifestyle feeling, realistic skin and sky.",
+        "negative": "gritty grain, dark noir, fake luxury props, overexposed skin",
+        "preserve": "保留真实人物、天空和环境。"
+      }
+    },
+    {
+      "id": "rinko_kawauchi_luminous",
+      "category": "photographer",
+      "title": "Rinko Kawauchi：安静明亮细节",
+      "subtitle": "高调 / 柔和 / 日常细部",
+      "summary": "适合花、水、玻璃、小孩、生活细节和柔和光线，强调安静、明亮、细腻。",
+      "tags": ["高调", "柔和", "细节", "日常"],
+      "suitable_for": ["花草", "水面", "玻璃", "生活细节"],
+      "risk": "不适合强烈夜景或需要硬朗对比的照片。",
+      "actions": ["生成这个方案", "查看参数", "写反馈"],
+      "prompt": {
+        "positive": "Luminous quiet detail edit, soft high-key light, gentle pastel color, delicate everyday subject, subtle contrast, realistic photographic texture.",
+        "negative": "harsh contrast, dark cinematic grade, heavy clarity, neon color",
+        "preserve": "保留原始细节主体和柔和光线。"
+      }
+    },
+    {
+      "id": "alex_webb_layered_color",
+      "category": "photographer",
+      "title": "Alex Webb：层次饱和街头",
+      "subtitle": "强光影 / 多平面 / 彩色复杂性",
+      "summary": "适合复杂街头、强阳光、多层前后景和浓郁色彩，让画面更有街头密度。",
+      "tags": ["街头", "层次", "饱和", "强光影"],
+      "suitable_for": ["复杂街景", "人群", "强阳光", "多平面画面"],
+      "risk": "简单风景或单主体照片会显得过度。",
+      "actions": ["生成这个方案", "查看参数", "写反馈"],
+      "prompt": {
+        "positive": "Layered saturated street color edit, strong sun and shadow, multiple planes of action, rich disciplined color, realistic documentary detail.",
+        "negative": "flat single-subject look, fake crowd, muddy saturation, fantasy color",
+        "preserve": "保留原始人物、街景和层次关系。"
+      }
+    },
+    {
+      "id": "gregory_crewdson_cinematic",
+      "category": "photographer",
+      "title": "Gregory Crewdson：环境电影感",
+      "subtitle": "冷暖灯光 / 静止叙事",
+      "summary": "适合空街、室内、郊区夜景和有故事感的空间，强调安静张力和控制光线。",
+      "tags": ["电影感", "环境", "冷暖光", "叙事"],
+      "suitable_for": ["夜景空间", "室内环境", "空街", "环境人像"],
+      "risk": "会比普通修复更风格化，不适合真实旅行记录。",
+      "actions": ["生成这个方案", "查看参数", "写反馈"],
+      "prompt": {
+        "positive": "Cinematic environmental photo edit, cool ambient shadows, warm practical lights, quiet narrative tension, polished realistic lighting, preserve original scene.",
+        "negative": "fake set pieces, added characters, surreal props, excessive teal-orange",
+        "preserve": "保留原始环境、人物和光源位置。"
+      }
+    },
+    {
+      "id": "nan_goldin_flash_diary",
+      "category": "photographer",
+      "title": "Nan Goldin：亲密闪光日记",
+      "subtitle": "室内 / 直闪 / 真实关系",
+      "summary": "适合室内朋友、聚会和私人纪实感照片，保留直接闪光和不完美真实感。",
+      "tags": ["直闪", "室内", "日记", "纪实"],
+      "suitable_for": ["朋友聚会", "室内人像", "私人记录", "直闪照片"],
+      "risk": "不适合需要精致商业质感的照片。",
+      "actions": ["生成这个方案", "查看参数", "写反馈"],
+      "prompt": {
+        "positive": "Intimate flash-diary documentary edit, direct indoor light, saturated but realistic color, candid personal mood, preserve natural imperfections.",
+        "negative": "glamour retouch, plastic skin, fake party props, over-cleaned background",
+        "preserve": "保留人物身份、真实光线和现场关系。"
+      }
+    },
+    {
+      "id": "peter_lindbergh_bw_portrait",
+      "category": "photographer",
+      "title": "Peter Lindbergh：克制黑白人像",
+      "subtitle": "真实皮肤 / 自然表情",
+      "summary": "适合自然人像、窗光和有表情的脸，保留皮肤质感和克制黑白层次。",
+      "tags": ["人像", "黑白", "真实皮肤", "克制"],
+      "suitable_for": ["自然人像", "窗光", "成熟面孔", "简单背景"],
+      "risk": "不适合想要强美颜或彩色情绪的照片。",
+      "actions": ["生成这个方案", "查看参数", "写反馈"],
+      "prompt": {
+        "positive": "Restrained black-and-white natural portrait edit, soft directional light, real skin texture, honest expression, subtle tonal contrast.",
+        "negative": "beauty smoothing, plastic skin, fashion glamour excess, fake studio light",
+        "preserve": "保留人物身份、真实表情和皮肤质感。"
+      }
+    },
+    {
+      "id": "annie_leibovitz_editorial",
+      "category": "photographer",
+      "title": "Annie Leibovitz：环境编辑人像",
+      "subtitle": "主光塑形 / 叙事背景",
+      "summary": "适合摆拍和环境人像，用受控光线和背景关系增强人物存在感。",
+      "tags": ["人像", "编辑", "环境", "戏剧光"],
+      "suitable_for": ["环境人像", "摆拍", "室内人物", "角色感照片"],
+      "risk": "普通随手照会被改得比较戏剧化。",
+      "actions": ["生成这个方案", "查看参数", "写反馈"],
+      "prompt": {
+        "positive": "Editorial environmental portrait edit, shaped key light, controlled background, polished cinematic color, strong subject presence, realistic skin texture.",
+        "negative": "plastic skin, fake costume, changed identity, overdone background blur",
+        "preserve": "保留人物身份、姿态和环境。"
+      }
+    },
+    {
+      "id": "steve_mccurry_travel_color",
+      "category": "photographer",
+      "title": "Steve McCurry：浓郁旅行色彩",
+      "subtitle": "眼神 / 地域色彩 / 中调",
+      "summary": "适合旅行人像、市集和有地方色彩的场景，突出眼神、织物和背景色彩。",
+      "tags": ["旅行", "人像", "浓郁色彩", "地域感"],
+      "suitable_for": ["旅行人像", "市集", "民族服饰", "彩色背景"],
+      "risk": "要先保护肤色，否则容易过饱和。",
+      "actions": ["生成这个方案", "查看参数", "写反馈"],
+      "prompt": {
+        "positive": "Dense travel color portrait edit, expressive eyes, rich natural colors, controlled highlights, strong sense of place, realistic skin tone.",
+        "negative": "oversaturated skin, fake cultural objects, plastic retouch, changed identity",
+        "preserve": "保留人物身份、肤色和地方环境。"
+      }
+    },
+    {
+      "id": "sebastiao_salgado_epic_bw",
+      "category": "photographer",
+      "title": "Sebastião Salgado：史诗黑白纪实",
+      "subtitle": "大场景 / 强质感 / 环境重量",
+      "summary": "适合风景、天气、劳动场景和宏大纪实，强调黑白层次、纹理和环境规模。",
+      "tags": ["黑白", "纪实", "风景", "质感"],
+      "suitable_for": ["大场景", "云层", "山水", "劳动/人文纪实"],
+      "risk": "小清新人像或彩色旅行照会被压得太重。",
+      "actions": ["生成这个方案", "查看参数", "写反馈"],
+      "prompt": {
+        "positive": "Epic black-and-white documentary edit, dramatic tonal range, detailed texture, luminous highlights, deep readable shadows, realistic environmental scale.",
+        "negative": "color pop, beauty retouch, fake sky, crushed unreadable shadows",
+        "preserve": "保留原始环境规模、人物和纹理。"
+      }
+    }
+  ]
+}

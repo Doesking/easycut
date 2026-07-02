@@ -1,0 +1,55 @@
+# LUT调色使用示例配置
+# 展示如何在SOE Auto Editor中使用影视飓风LUT调色模板
+
+# 基础输出配置
+output:
+  resolution: [1920, 1080]
+  fps: 30
+  codec: "libx264"
+  bitrate: "8M"
+  format: "mp4"
+
+# 场景检测配置
+scene_detection:
+  threshold: 27.0
+  min_scene_length: 2.0
+  max_scene_length: 30.0
+
+# 内容分类配置
+classification:
+  confidence_threshold: 0.6
+
+# 音乐配置
+music:
+  library_path: "assets/music"
+
+# 叠加层配置
+overlays:
+  title_font: "Noto Sans CJK SC"
+  lower_third:
+    height: 120
+    background: "rgba(180, 30, 30, 0.85)"
+  logo:
+    position: "top_right"
+    size: [120, 120]
+    opacity: 0.9
+
+# 调色配置示例
+# 可以通过以下方式指定调色预设：
+# 1. 传统参数预设：warm_red, professional, bright, warm
+# 2. 风光摄影预设：nature_cinematic, golden_hour, moody_forest, teal_orange
+# 3. 影视飓风LUT预设：ysjf_cinematic_film, ysjf_teal_orange, ysjf_golden_hour, ysjf_moody_cinematic, ysjf_vintage_film
+# 4. 自定义LUT文件路径：/path/to/your/lut.cube
+
+# 使用示例：
+# 1. 使用影视飓风电影感LUT
+# color_tone: "ysjf_cinematic_film"
+
+# 2. 使用影视飓风青橙调LUT
+# color_tone: "ysjf_teal_orange"
+
+# 3. 使用传统暖红色调
+# color_tone: "warm_red"
+
+# 4. 使用自定义LUT文件
+# color_tone: "/path/to/custom_lut.cube"

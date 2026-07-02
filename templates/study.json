@@ -1,0 +1,12 @@
+{
+  "name": "学习培训",
+  "color_tone": "warm",
+  "text_style": "formal",
+  "structure": [
+    {"phase": "venue", "duration": [3, 5], "content": ["indoor"]},
+    {"phase": "lecture", "duration_ratio": 0.5, "content": ["speech", "meeting"]},
+    {"phase": "discussion", "duration": [10, 20], "content": ["meeting"]},
+    {"phase": "summary", "duration": [5, 8], "content": ["group_photo", "meeting"]}
+  ],
+  "music_preference": {"mood": ["calm","inspiring","focused"], "bpm_range": [60, 90], "energy": ["steady"]}
+}
