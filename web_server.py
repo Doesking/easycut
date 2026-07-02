@@ -3616,15 +3616,65 @@ async def api_script_categories():
 
 
 if __name__ == "__main__":
-    print(r"""
-╔══════════════════════════════════════════╗
-║       EasyCut 易剪辑  v2.9               ║
-║   AI 智能视频剪辑 · 大厂品质             ║
-║                                          ║
-║  👉 http://127.0.0.1:8080               ║
-║                                          ║
-║  模板: 党建 / 会议 / 参观 / 学习 / 风光  ║
-║  导出: MP4 / MOV / 剪映XML / EDL        ║
-╚══════════════════════════════════════════╝
+    import argparse
+    import webbrowser
+    import threading
+
+    parser = argparse.ArgumentParser(description="EasyCut 易剪辑 v2.9")
+    parser.add_argument("--port", type=int, default=9090, help="服务端口 (默认: 9090)")
+    parser.add_argument("--host", type=str, default="0.0.0.0", help="监听地址 (默认: 0.0.0.0)")
+    parser.add_argument("--no-browser", action="store_true", help="不自动打开浏览器")
+    parser.add_argument("--log-level", type=str, default="info", choices=["debug", "info", "warning", "error"])
+    args = parser.parse_args()
+
+    # 检查端口是否可用
+    import socket
+    def check_port(port):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            try:
+                s.bind(('127.0.0.1', port))
+                return True
+            except OSError:
+                return False
+
+    port = args.port
+    if not check_port(port):
+        for p in range(9090, 9100):
+            if check_port(p):
+                port = p
+                break
+        else:
+            print(f"错误: 无法找到可用端口 (尝试了 9090-9099)")
+            exit(1)
+
+    # 显示启动信息
+    print(rf"""
+╔══════════════════════════════════════════════════════════════╗
+║           🎬 EasyCut 易剪辑  v2.9                           ║
+║       AI 智能视频剪辑 · 大厂品质                             ║
+║                                                              ║
+║  🌐 服务地址: http://127.0.0.1:{port:<24}║
+║                                                              ║
+║  📋 功能模块:                                                ║
+║     • 视频剪辑: 党建 / 会议 / 参观 / 学习 / 风光 / 宣传     ║
+║     • 照片修图: 30+ 预设 / 人脸美颜 / 背景去除               ║
+║     • 脚本策划: AI 生成拍摄脚本                              ║
+║     • 调色系统: 25 个预设 / 自定义 LUT                       ║
+║                                                              ║
+║  ⌨️  快捷键: ⌘1 视频剪辑 / ⌘2 照片修图 / ⌘3 脚本策划       ║
+║  ⏹️  停止服务: Ctrl+C                                        ║
+╚══════════════════════════════════════════════════════════════╝
     """)
-    uvicorn.run(app, host="0.0.0.0", port=9090, log_level="info")
+
+    # 自动打开浏览器
+    if not args.no_browser:
+        def open_browser():
+            import time
+            time.sleep(1.5)  # 等待服务器启动
+            webbrowser.open(f"http://127.0.0.1:{port}")
+
+        browser_thread = threading.Thread(target=open_browser, daemon=True)
+        browser_thread.start()
+
+    # 启动服务器
+    uvicorn.run(app, host=args.host, port=port, log_level=args.log_level)
